@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background: #111;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* 👈 Tạo khoảng cách đều giữa các mục */
+    background: #222;
+  }
+  
+  /* Mỗi mục li */
+  nav ul li {
+    position: relative;
+  }
+  
+  /* Link bên trong */
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hiệu ứng gạch dưới */
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #00ffe1;
+    transition: width 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #00ffe1;
+  }
+  
+  nav ul li a:hover::after {
+    width: 60%;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 960px;
+    margin: 30px auto;
+  }
+  
+  .post {
+  background: white;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: block; /* 👈 Quan trọng: KHÔNG dùng flex nữa */
+}
+  .post img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .content h2 {
+    margin-top: 0;
+  }
+  
+  .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+  }
+
+  /* Khung bài viết */
+.post {
+    margin-bottom: 30px;
+  }
+  
+  /* Khung ảnh cố định theo tỷ lệ */
+  .thumbnail-box {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* 👈 Tạo khung cố định (ảnh không co theo nội dung) */
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  /* Ảnh bên trong khung */
+  .thumbnail-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 👈 Cắt ảnh giữ đúng khung */
+    object-position: center;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Tiêu đề và mô tả */
+  .content {
+    padding: 10px 0;
+  }
+  
+  .content h2 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+  }
+  
+  .content p {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
