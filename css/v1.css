@@ -64,4 +64,27 @@ body {
     padding: 20px 0;
     margin-top: 30px;
   }
+  .read-more {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .read-more:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 86, 179, 0.3);
+  }
+  
+  .read-more:active {
+    transform: scale(0.98);
+  }
   
