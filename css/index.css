@@ -154,4 +154,20 @@ body {
     font-size: 14px;
     line-height: 1.5;
   }
-  
+  /* ========================
+   DESKTOP 2 COLUMNS
+======================== */
+/* ========================
+   DESKTOP 2 COLUMNS
+======================== */
+@media (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .post {
+    margin-bottom: 0;
+  }
+}
