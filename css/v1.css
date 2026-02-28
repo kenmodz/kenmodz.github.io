@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -104,6 +105,7 @@ body {
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
     transition: background-color 0.3s ease, transform 0.2s ease;
+    
   }
   
   .read-more:hover {
@@ -115,4 +117,4 @@ body {
   .read-more:active {
     transform: scale(0.98);
   }
-  
+
