@@ -140,11 +140,14 @@ body {
 }
 .button-group {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;   /* cho phép xuống dòng */
     gap: 10px;
 }
 
+/* mỗi nút = 2 nút / hàng */
 .button-group a {
-    width: calc(50% - 5px);
+    flex: 0 0 calc(50% - 5px);
     text-align: center;
+    margin-top: 0;
+    box-sizing: border-box;
 }
