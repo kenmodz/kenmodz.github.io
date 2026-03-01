@@ -118,3 +118,33 @@ body {
     transform: scale(0.98);
   }
 
+/* Tạo container chứa 2 nút */
+.button-group {
+  display: flex;
+  gap: 10px; /* Khoảng cách giữa 2 nút */
+  margin-top: 15px;
+}
+
+/* Chỉnh lại nút để chia đôi chiều rộng */
+.button-group a {
+  flex: 1; /* Hai nút sẽ có độ dài bằng nhau */
+  text-align: center;
+  margin-top: 0 !important; /* Ghi đè margin cũ */
+}
+
+/* Trên điện thoại cực nhỏ, nếu muốn nó tự xuống dòng để khỏi bị chật thì dùng wrap */
+@media (max-width: 320px) {
+  .button-group {
+    flex-direction: column;
+  }
+}
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.button-group a {
+    width: calc(50% - 5px);
+    text-align: center;
+}
