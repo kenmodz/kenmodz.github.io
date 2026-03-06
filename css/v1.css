@@ -151,3 +151,11 @@ body {
     margin-top: 0;
     box-sizing: border-box;
 }
+/* MOBILE: 1 nút / 1 hàng */
+@media (max-width: 768px) {
+
+  .button-group a {
+      flex: 0 0 100%;
+  }
+
+}

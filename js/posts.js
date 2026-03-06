@@ -1,5 +1,40 @@
 const posts = [
 
+{ title:"Mod Skin FF OB52 V29 Set đồ áo họa điểu",
+desc:"Nhân vật: ALok thức tỉnh + Balo vợ iu",
+img:"images/v29_52.jpg",
+link:"OB52/v29_52.html" },
+
+
+{ title:"Mod Skin FF OB52 V28 Hành động lv 100",
+desc:"Hành động: Rét run",
+img:"images/v28_52.jpg",
+link:"OB52/v28_52.html" },
+
+{ title:"Mod Skin FF OB52 V27 Set Đồ Đôi Bá Sàn",
+desc:"Nhân vật: Alok và Kapella",
+img:"images/v27_52.jpg",
+link:"OB52/v27_52.html" },
+
+
+{ title:"Mod Skin FF OB52 V26 M1887 Vũ Trụ Hủy Diệt",
+desc:"Súng M1887: Ánh Sao Thần Thoại và Phong Xà",
+img:"images/v26_52.jpg",
+link:"OB52/v26_52.html" },
+
+
+
+
+
+{ title:"Mod Skin FF OB52 V25 Set đồ trai hổ ngáo ",
+desc:"Nhân vật: Alok",
+img:"images/v25_52.jpg",
+link:"OB52/v25_52.html" },
+
+
+
+
+    
 { title:"Mod Skin FF OB52 V24 Set đồ nhân vật nam nữ",
 desc:"Nhân vật: Alok và Kapella",
 img:"images/v24_52.jpg",
