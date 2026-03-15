@@ -1,5 +1,35 @@
 const posts = [
 
+{ title:"Mod Skin FF OB52 V35 Set đồ áo Nagi ",
+desc:"Nhân vật: Ignis hoặc Alok thức tỉnh",
+img:"images/v35_52.jpg",
+link:"OB52/v35_52.html" },    
+{ title:"Mod Skin FF OB52 V34 Set đồ hắc tinh  ",
+desc:"Nhân vật: Ignis",
+img:"images/v34_52.jpg",
+link:"OB52/v34_52.html" },    
+
+{ title:"Mod Skin FF OB52 V33 Set đồ áo sứ giả thần ma ",
+desc:"Nhân vật: Alok thức tỉnh",
+img:"images/v33_52.jpg",
+link:"OB52/v33_52.html" },
+
+{ title:"Mod Skin FF OB52 V32 Súng MP40 Mãng Xà LV7",
+desc:"Súng: MP40 Phong Xà",
+img:"images/v32_52.jpg",
+link:"OB52/v32_52.html" },  
+
+{ title:"Mod Skin FF OB52 V31 Set đồ áo Isagi",
+desc:"Nhân vật: Ignis",
+img:"images/v31_52.jpg",
+link:"OB52/v31_52.html" },    
+
+{ title:"Mod Skin FF OB52 V30 M1887 Hỏa nộ",
+desc:"Súng: M1887 Ánh Sao Thần Thoại hoặc Phong Xà",
+img:"images/v30_52.jpg",
+link:"OB52/v30_52.html" },
+
+
 { title:"Mod Skin FF OB52 V29 Set đồ áo họa điểu",
 desc:"Nhân vật: ALok thức tỉnh + Balo vợ iu",
 img:"images/v29_52.jpg",
