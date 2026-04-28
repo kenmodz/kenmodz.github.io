@@ -1,152 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ken Mod Z - Chọn Hướng Dẫn</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0f172a;
-      color: #f1f5f9;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
-    }
-    .container {
-      max-width: 500px;
-      width: 100%;
-      text-align: center;
-      background: #1e293b;
-      padding: 40px 25px;
-      border-radius: 24px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-    }
-    .logo {
-      font-size: 36px;
-      font-weight: 800;
-      color: #18b3f5;
-      margin-bottom: 30px;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      text-shadow: 0 0 15px rgba(24, 179, 245, 0.4);
-    }
-    .instruction-text {
-      margin-bottom: 30px;
-      font-size: 18px;
-      color: #94a3b8;
-    }
-    .button-group {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      margin-bottom: 35px;
-    }
-    .btn {
-      padding: 18px 25px;
-      font-size: 18px;
-      font-weight: 700;
-      border: none;
-      border-radius: 15px;
-      cursor: pointer;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .btn-android {
-      background: linear-gradient(135deg, #3ddc84 0%, #2ebf6f 100%);
-      color: #072112;
-      box-shadow: 0 4px 15px rgba(61, 220, 132, 0.2);
-    }
-    .btn-android:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(61, 220, 132, 0.4);
-    }
-    .btn-ios {
-      background: linear-gradient(135deg, #f1f5f9 0%, #cbd5e1 100%);
-      color: #0f172a;
-      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
-    }
-    .btn-ios:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
-    }
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ken Mod Z - Chọn Hướng Dẫn</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #0f172a;
+        color: #f1f5f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+      .container {
+        max-width: 500px;
+        width: 100%;
+        text-align: center;
+        background: #1e293b;
+        padding: 40px 25px;
+        border-radius: 24px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .logo {
+        font-size: 36px;
+        font-weight: 800;
+        color: #18b3f5;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-shadow: 0 0 15px rgba(24, 179, 245, 0.4);
+      }
+      .instruction-text {
+        margin-bottom: 30px;
+        font-size: 18px;
+        color: #94a3b8;
+      }
+      .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 35px;
+      }
+      .btn {
+        padding: 18px 25px;
+        font-size: 18px;
+        font-weight: 700;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn-android {
+        background: linear-gradient(135deg, #3ddc84 0%, #2ebf6f 100%);
+        color: #072112;
+        box-shadow: 0 4px 15px rgba(61, 220, 132, 0.2);
+      }
+      .btn-android:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(61, 220, 132, 0.4);
+      }
+      .btn-ios {
+        background: linear-gradient(135deg, #f1f5f9 0%, #cbd5e1 100%);
+        color: #0f172a;
+        box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+      }
+      .btn-ios:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+      }
 
-    /* Bảng thông báo tác hại mới */
-    .warning-box {
-      background: rgba(248, 113, 113, 0.05);
-      border: 1px solid rgba(248, 113, 113, 0.3);
-      padding: 20px;
-      border-radius: 18px;
-      text-align: left;
-    }
-    .warning-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: #f87171;
-      font-weight: 700;
-      margin-bottom: 12px;
-      justify-content: center;
-      font-size: 17px;
-      text-transform: uppercase;
-    }
-    .warning-list {
-      margin: 0;
-      padding-left: 20px;
-      color: #cbd5e1;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-    .warning-list li {
-      margin-bottom: 8px;
-    }
-    .warning-list li strong {
-      color: #f87171;
-    }
-  </style>
-</head>
-<body>
+      /* Bảng thông báo tác hại mới */
+      .warning-box {
+        background: rgba(248, 113, 113, 0.05);
+        border: 1px solid rgba(248, 113, 113, 0.3);
+        padding: 20px;
+        border-radius: 18px;
+        text-align: left;
+      }
+      .warning-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #f87171;
+        font-weight: 700;
+        margin-bottom: 12px;
+        justify-content: center;
+        font-size: 17px;
+        text-transform: uppercase;
+      }
+      .warning-list {
+        margin: 0;
+        padding-left: 20px;
+        color: #cbd5e1;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      .warning-list li {
+        margin-bottom: 8px;
+      }
+      .warning-list li strong {
+        color: #f87171;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">Ken Mod Z</div>
+      <p class="instruction-text">Chọn hệ điều hành để xem hướng dẫn:</p>
 
-  <div class="container">
-    <div class="logo">Ken Mod Z</div>
-    <p class="instruction-text">Chọn hệ điều hành để xem hướng dẫn:</p>
-    
-    <div class="button-group">
-      <a href="https://www.youtube.com/watch?v=__TKx8H45sw" target="_blank" class="btn btn-android">
-        HƯỚNG DẪN ANDROID
-      </a>
+      <div class="button-group">
+        <a
+          href="https://www.youtube.com/watch?v=__TKx8H45sw"
+          target="_blank"
+          class="btn btn-android"
+        >
+          HƯỚNG DẪN ANDROID
+        </a>
 
-      <button onclick="showIosAlert()" class="btn btn-ios">
-        HƯỚNG DẪN IOS
-      </a>
+        <button onclick="showIosAlert()" class="btn btn-ios">
+          HƯỚNG DẪN IOS
+        </button>
+      </div>
+
+      <div class="warning-box">
+        <div class="warning-header">
+          <span>⚠️ LƯU Ý KHI JAILBREAK / ROOT THIẾT BỊ</span>
+        </div>
+        <ul class="warning-list">
+          <li>
+            <strong>Có thể bị khóa tài khoản:</strong> Một số game (ví dụ Free
+            Fire) có thể phát hiện thiết bị đã Jailbreak/Root và tiến hành hạn
+            chế hoặc khóa tài khoản.
+          </li>
+          <li>
+            <strong>Mất bảo hành:</strong> Việc can thiệp hệ thống có thể làm
+            mất quyền lợi bảo hành từ nhà sản xuất.
+          </li>
+          <li>
+            <strong>Rủi ro bảo mật:</strong> Thiết bị dễ bị tấn công bởi mã độc
+            hoặc bị đánh cắp dữ liệu cá nhân.
+          </li>
+          <li>
+            <strong>Lỗi hệ thống:</strong> Có thể gây treo máy (brick), lỗi phần
+            mềm hoặc xung đột ứng dụng.
+          </li>
+          <li>
+            <strong>Ảnh hưởng ứng dụng:</strong> Một số app ngân hàng, ví điện
+            tử hoặc dịch vụ bảo mật cao có thể không hoạt động.
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="warning-box">
-      <div class="warning-header">
-        <span>⚠️ LƯU Ý KHI JAILBREAK / ROOT THIẾT BỊ</span>
-  </div>
-  <ul class="warning-list">
-    <li><strong>Có thể bị khóa tài khoản:</strong> Một số game (ví dụ Free Fire) có thể phát hiện thiết bị đã Jailbreak/Root và tiến hành hạn chế hoặc khóa tài khoản.</li>
-    <li><strong>Mất bảo hành:</strong> Việc can thiệp hệ thống có thể làm mất quyền lợi bảo hành từ nhà sản xuất.</li>
-    <li><strong>Rủi ro bảo mật:</strong> Thiết bị dễ bị tấn công bởi mã độc hoặc bị đánh cắp dữ liệu cá nhân.</li>
-    <li><strong>Lỗi hệ thống:</strong> Có thể gây treo máy (brick), lỗi phần mềm hoặc xung đột ứng dụng.</li>
-    <li><strong>Ảnh hưởng ứng dụng:</strong> Một số app ngân hàng, ví điện tử hoặc dịch vụ bảo mật cao có thể không hoạt động.</li>
-  </ul>
-    </div>
-  </div>
-
-  <script>
-    function showIosAlert() {
-      alert("Hệ thống sẽ cập nhật cách hướng dẫn cho iOS sau. Vui lòng quay lại sau nhé!");
-    }
-  </script>
-
-</body>
+    <script>
+      function showIosAlert() {
+        alert(
+          "Hệ thống sẽ cập nhật cách hướng dẫn cho iOS sau. Vui lòng quay lại sau nhé!",
+        );
+      }
+    </script>
+  </body>
 </html>
