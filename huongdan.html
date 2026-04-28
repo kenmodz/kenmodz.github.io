@@ -3,66 +3,151 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ken Mod Z - Hướng dẫn cài đặt</title>
+  <title>Ken Mod Z - Chọn Hướng Dẫn</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #0f172a;
       color: #f1f5f9;
-      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
     }
     .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    header {
+      max-width: 500px;
+      width: 100%;
       text-align: center;
-      padding: 20px;
+      background: #1e293b;
+      padding: 40px 25px;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      border: 1px solid rgba(255, 255, 255, 0.05);
     }
     .logo {
-      font-size: 28px;
-      font-weight: bold;
+      font-size: 36px;
+      font-weight: 800;
       color: #18b3f5;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-shadow: 0 0 15px rgba(24, 179, 245, 0.4);
     }
-    h2 {
-      margin-top: 20px;
-      font-size: 24px;
+    .instruction-text {
+      margin-bottom: 30px;
+      font-size: 18px;
+      color: #94a3b8;
     }
-    ol {
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 35px;
+    }
+    .btn {
+      padding: 18px 25px;
+      font-size: 18px;
+      font-weight: 700;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn-android {
+      background: linear-gradient(135deg, #3ddc84 0%, #2ebf6f 100%);
+      color: #072112;
+      box-shadow: 0 4px 15px rgba(61, 220, 132, 0.2);
+    }
+    .btn-android:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(61, 220, 132, 0.4);
+    }
+    .btn-ios {
+      background: linear-gradient(135deg, #f1f5f9 0%, #cbd5e1 100%);
+      color: #0f172a;
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    }
+    .btn-ios:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+    }
+
+    /* Bảng thông báo tác hại mới */
+    .warning-box {
+      background: rgba(248, 113, 113, 0.05);
+      border: 1px solid rgba(248, 113, 113, 0.3);
+      padding: 20px;
+      border-radius: 18px;
+      text-align: left;
+    }
+    .warning-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #f87171;
+      font-weight: 700;
+      margin-bottom: 12px;
+      justify-content: center;
+      font-size: 17px;
+      text-transform: uppercase;
+    }
+    .warning-list {
+      margin: 0;
       padding-left: 20px;
+      color: #cbd5e1;
+      font-size: 14px;
+      line-height: 1.6;
     }
-    li {
-      margin: 12px 0;
-      background: #1e293b;
-      padding: 12px;
-      border-radius: 10px;
+    .warning-list li {
+      margin-bottom: 8px;
+    }
+    .warning-list li strong {
+      color: #f87171;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="logo">Ken Mod Z</div>
-    </header>
 
-    <h2>Các bước chi tiết dành cho Android</h2>
-    <ol>
-      <li>Bấm vào liên kết và tải file</li>
-      <li>Cài đặt ứng dụng ZArchiver</li>
-      <li>Giải nén file MOD bằng ZArchiver</li>
-      <li>Giữ vào thư mục đã giải nén và chọn Sao chép → dán vào <code>/Android/Data</code></li>
-      <li>Khi ở thư mục <code>/Android/Data</code>, nhấn Dán và áp dụng cho tất cả các tệp để hoàn tất</li>
-    </ol>
-    <h2>Các bước chi tiết dành cho IOS</h2>
-    <ol>
-      <li>Bấm vào liên kết và tải file</li>
-      <li>Cài đặt ứng dụng Filza</li>
-      <li>Giải nén file MOD</li>
-      <li>Ấn vào file mod cho đến khi thấy file nhân vật ví dụ: optionalab_avatar_66</li>
-      <li>Giữ vào và ấn sao chép đến file thư mục gốc của game</li>
-    </ol>
+  <div class="container">
+    <div class="logo">Ken Mod Z</div>
+    <p class="instruction-text">Chọn hệ điều hành để xem hướng dẫn:</p>
+    
+    <div class="button-group">
+      <a href="https://www.youtube.com/watch?v=__TKx8H45sw" target="_blank" class="btn btn-android">
+        HƯỚNG DẪN ANDROID
+      </a>
+
+      <button onclick="showIosAlert()" class="btn btn-ios">
+        HƯỚNG DẪN IOS
+      </a>
+    </div>
+
+    <div class="warning-box">
+      <div class="warning-header">
+        <span>⚠️ LƯU Ý QUAN TRỌNG</span>
+      </div>
+      <ul class="warning-list">
+        <li><strong>Không được</strong>: Jailbreak (iOS) hoặc Root (Android).</li>
+        <li><strong>Khóa tài khoản:</strong> Mặc dù cho không dùng hack hay bất cứ phần mềm nào can thiệp vào game nhưng vẫn có thể sẽ bị <strong>khóa tài khoản</strong> nếu game phát hiện thiết bị 
+        Root hoặc Jailbreak máy, không chỉ Free Fire mà còn rất nhiều tự game khác sẽ đá khỏi game khi phát hiện thiết bị đã Jailbreak và Root máy</li>
+        <li><strong>Mất bảo hành:</strong> Can thiệp hệ thống sẽ làm mất quyền lợi bảo hành từ nhà sản xuất.</li>
+        <li><strong>Rủi ro bảo mật:</strong> Dễ bị mã độc tấn công và đánh cắp dữ liệu cá nhân.</li>
+        <li><strong>Lỗi hệ thống:</strong> Gây treo máy (Brick), xung đột ứng dụng ngân hàng và ví điện tử.</li>
+      </ul>
+    </div>
   </div>
+
+  <script>
+    function showIosAlert() {
+      alert("Hệ thống sẽ cập nhật cách hướng dẫn cho iOS sau. Vui lòng quay lại sau nhé!");
+    }
+  </script>
+
 </body>
 </html>
