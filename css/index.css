@@ -133,17 +133,17 @@ footer {
 }
 
 /* Ẩn danh sách bài viết cũ */
-#post-list {
+/* #post-list {
   display: none;
-}
+} */
 
 /* Thêm thông báo bảo trì vào phần main */
-.container::before {
-  content: "⚠️ Website đang cập nhật các bản Mod mới. Vui lòng quay lại sau nhé!";
+/* .container::before {
+  content: "⚠️ Website đang cập nhật các bản Mod mới. Vui lòng quay lại sau nhé! ";
   display: block;
   text-align: center;
   padding: 50px 20px;
   font-size: 1.2rem;
   color: #ff4757;
   font-weight: bold;
-}
+} */
