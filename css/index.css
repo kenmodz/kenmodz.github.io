@@ -143,6 +143,17 @@ footer {
   font-weight: bold;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+/* Hiệu ứng khi di chuột vào thông báo */
+a:has(.notice) {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+a:has(.notice):hover .notice {
+  transform: scale(1.02); /* Phóng to nhẹ khi di chuột */
+  filter: brightness(1.2); /* Làm sáng hơn một chút */
+  cursor: pointer;
+}
 /* Ẩn danh sách bài viết cũ */
 /* #post-list {
   display: none;
