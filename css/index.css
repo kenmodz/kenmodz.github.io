@@ -131,28 +131,110 @@ footer {
   text-align: center;
   padding: 15px;
 }
+/* ==============================
+   THÔNG BÁO CHUNG
+   ============================== */
+
 .notice {
   margin: 15px auto;
   max-width: 1100px;
-  padding: 14px 20px;
-  background: linear-gradient(135deg, #ff9800, #ff5722);
-  color: white;
-  border-radius: 10px;
+  padding: 16px 22px;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
   text-align: center;
   font-size: 16px;
-  font-weight: bold;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-/* Hiệu ứng khi di chuột vào thông báo */
-a:has(.notice) {
-  display: block;
-  transition: transform 0.3s ease;
+  font-weight: 600;
+  line-height: 1.5;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    filter 0.3s ease;
 }
 
-a:has(.notice):hover .notice {
-  transform: scale(1.02); /* Phóng to nhẹ khi di chuột */
-  filter: brightness(1.2); /* Làm sáng hơn một chút */
-  cursor: pointer;
+.notice-icon {
+  font-size: 21px;
+  flex-shrink: 0;
+}
+
+/* ==============================
+   THÔNG BÁO YOUTUBE
+   ============================== */
+
+.youtube-notice {
+  color: #fff;
+
+  background: linear-gradient(135deg, #ff0000, #ff1744);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow:
+    0 5px 18px rgba(255, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.youtube-notice-link {
+  display: block;
+  text-decoration: none;
+}
+
+.youtube-notice-link:hover .youtube-notice {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+
+  box-shadow:
+    0 8px 24px rgba(255, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* ==============================
+   THÔNG BÁO AN TOÀN
+   ============================== */
+
+.safe-notice {
+  color: #14532d;
+
+  background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+
+  border: 1px solid #86efac;
+
+  box-shadow: 0 4px 14px rgba(34, 197, 94, 0.12);
+}
+
+.safe-notice:hover {
+  transform: translateY(-1px);
+
+  box-shadow: 0 7px 18px rgba(34, 197, 94, 0.18);
+}
+
+/* ==============================
+   MOBILE
+   ============================== */
+
+@media (max-width: 600px) {
+  .notice {
+    margin: 12px 10px;
+    padding: 13px 15px;
+
+    font-size: 14px;
+    line-height: 1.45;
+
+    border-radius: 10px;
+  }
+
+  .notice-icon {
+    font-size: 18px;
+  }
 }
 /* Ẩn danh sách bài viết cũ */
 /* #post-list {
