@@ -89,7 +89,7 @@ const posts = [
     // desc: "Nhân Vật: Alok thức tỉnh hoặc Ignis ",
     // desc: "Hành động: Bắn nè",
     // desc: "Bật hoạt ảnh mới FF Max",
-    desc: "Hòm Xác: Chất độc trong shop",
+    desc: "Hòm Xác: Chất độc trong shop + Không lag khi gạt địch",
 
     img: "images/v-test-54.jpg",
     link: "OB54/v-test-54.html",
